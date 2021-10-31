@@ -1,0 +1,314 @@
+:root{
+--malachite: #04e762ff;
+--rich-black-fogra-39: #08090aff;
+--silver-metallic: #a7a2a9ff;
+--cultured: #f4f7f5ff;
+--davys-grey: #575a5eff;
+--dark-jungle-green: #222823ff;
+--white:#ffffff;
+--riot:#262626;
+}
+
+@font-face {
+    font-family: lulo;
+    src: url(../fonts/FontsFree-Net-Lulo-Clean-W01-One.ttf);
+ }
+ 
+ @font-face {
+    font-family: lulo-bold;
+    src: url(../fonts/FontsFree-Net-Lulo-Clean-W01-One-Bold.ttf);
+    font-weight: bold;
+ }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    /* overflow-x: hidden; */
+}
+
+
+
+
+.start{
+    background-image: url("../img/joshua-hoehne-8ZvTRSRdsOA-unsplash.jpg");
+    max-width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.start .navbar{
+    display: flex;
+    align-items: center;
+    padding:25px;
+    justify-content: space-between;
+    
+}
+
+.start .bar{
+    align-self: flex-end;
+}
+.start .bar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start .bar ul li{
+    margin:0px 38px;
+}
+
+.start .bar ul li a{
+    font-family: lulo-bold;
+    color:var(--white);
+    font-size: 14px;
+}
+
+.start .bar ul li #home{
+    color: var(--malachite)
+}
+
+
+
+.start .navbar .logo h1{
+    font-family: lulo-bold;
+    font-weight: bold;
+    color:var(--white);
+    font-size:50px;
+
+}
+
+.start .navbar .logo p{
+
+    font-family: lulo-bold;
+    color: var(--malachite);
+    background-color: var(--white);
+    padding:0 10px;
+}
+
+.fa-plus{
+    color: var(--malachite);
+    font-size:30px;
+    text-align: center;
+}
+
+
+.quote{
+    width: 60%;
+    margin: 180px 140px;;
+}
+
+.quote .texts{
+    width: 100%;
+}
+
+.quote .texts h1{
+    font-family: lulo-bold;
+    color: var(--malachite);
+    font-size:80px;
+}
+
+.quote .texts p{
+    font-family: lulo;
+    color: var(--white);
+    text-transform: capitalize;
+}
+
+.quote .texts p span{
+    color: var(--malachite)
+}
+
+
+.about{
+    background-image: url(../img/colin-lloyd-QyLJpC8rChY-unsplash.jpg);
+    max-width: 100%;
+    height: 50vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:right;
+    background-attachment: fixed;
+    background-color:var(--davys-grey);
+    display: flex;
+    align-items: center;
+    
+}
+
+.about .ab {
+    width:40%;
+    margin:0px 85px ;
+}
+.about .ab h1 {
+    font-family: lulo-bold;
+    color: var(--malachite);
+    padding:10px 0;
+    font-size: 70px;
+    border-bottom: 5px solid var(--malachite);
+}
+.about .ab p{
+    font-family: lulo;
+    color: var(--white);
+    padding: 10px 0;
+}
+
+
+.ourServices{
+    /* width: 100vw; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    background-color: var(--riot);
+    
+}
+
+.ourServices #serve{
+    font-family: lulo-bold;
+    font-size:70px;
+    color:var(--malachite);
+}
+
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 1fr;
+    grid-gap:20px;
+    padding:40px;
+    
+}
+
+.services-container .service{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-container .service .title h1{
+    font-family: lulo-bold;
+    color: var(--malachite);
+    text-align: center;
+}
+
+.services-container .service .title{
+    /* width: 50%; */
+
+}
+
+.services-container .service .title p{
+    font-family: lulo;
+    color: var(--white);
+    text-align: center;
+    font-size:12px;
+    padding:0 60px
+}
+
+
+.services-container .service a p,.mentor-container .mentor .info a p{
+    padding:10px 30px;
+    background-color:var(--malachite);
+    margin-top: 12px;;
+    font-family: lulo-bold;
+    font-size: 12px;
+    color:#000000;
+}
+
+.ourServices .service .img img{
+    max-width: 100%;
+}
+
+.mentors{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: column;
+    background-color: var(--davys-grey);
+    /* height: 100vh; */
+    
+
+}
+
+.mentors #master{
+    font-family: lulo-bold;
+    font-size: 60px;
+    color: var(--malachite)
+}
+.mentor-container{
+   padding: 40px;
+ 
+}
+
+.mentor-container .mentor{
+   
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    
+}
+
+.mentor-container .mentor .info{
+    padding: 20px;
+    width: 50%;
+}
+
+
+.mentor-container .reverse{
+    flex-direction: row-reverse;
+}
+
+.mentor-container .mentor .info h1{
+    font-family: lulo-bold;
+    font-size: 60px;
+    color: var(--malachite)
+}
+
+
+.mentor-container .mentor .info p{
+    font-family: lulo;
+    font-size:18px;
+    color: var(--white)
+}
+
+.mentor-container .mentor .info a p{
+    font-size: 20px;
+}
+
+.mentor-container .mentor .photo img{
+   max-width: 100%;
+   height:70vh;
+   filter: grayscale(100%);
+}
+
+
+.footer{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: var(--dark-jungle-green);
+}
+
+.footer .time li p,.footer .contact li p{
+    color:var(--white);
+    font-family: lulo;
+}
+
+.footer .contact #email,.footer .time li p span{
+    color:var(--malachite)
+}
+
+.time h1,.contact h1,.map h1{
+    font-family: lulo-bold;
+    color:var(--malachite);
+    padding:10px
+
+}
+.openbutton,.bar .closebutton{display:none;}
